@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Examen1-FormulaGeneral</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="equipo4">
+        <item>Francisco Javier Flores Vásquez</item>
+        <item>Eduardo Macias Montañez </item>
+        <item>David Alberto Manríquez Del rio</item>
+        <item>Correo de dudas: francisco_flores@outlook.com</item>
+    </string-array>
+</resources>

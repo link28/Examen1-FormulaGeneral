@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.franc.examen1_formulageneral.Principal"
+    tools:showIn="@layout/activity_principal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <TableLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Fórmula General"
+                    android:id="@+id/txtTitulo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="a:"
+                    android:id="@+id/txta"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:ems="10"
+                    android:id="@+id/etA"
+                    android:layout_weight="1"
+                    android:hint="Introduce un valor" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="b:"
+                    android:id="@+id/txtb"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:ems="10"
+                    android:id="@+id/etB"
+                    android:layout_weight="1"
+                    android:hint="Introduce un valor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="c:"
+                    android:id="@+id/txtc"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:ems="10"
+                    android:id="@+id/etC"
+                    android:layout_weight="1"
+                    android:hint="Introduce un valor" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Resolver"
+                    android:id="@+id/btnResolver"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_column="1"
+                    android:layout_weight=".75" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cargar"
+                    android:id="@+id/btnCargar"
+                    android:layout_column="25"
+                    android:layout_weight="0.80" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar"
+                    android:id="@+id/btnEliminar"
+                    android:layout_weight="0.85" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="X1:"
+                    android:id="@+id/txtx1"
+                    android:layout_weight="0.20"
+                    android:gravity="right" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:ems="10"
+                    android:id="@+id/etX1"
+                    android:enabled="false"
+                    android:layout_weight="0.20"
+                    android:gravity="right" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="X2:"
+                    android:id="@+id/txtx2"
+                    android:layout_weight="0.20"
+                    android:gravity="right" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:ems="10"
+                    android:id="@+id/etX2"
+                    android:enabled="false"
+                    android:layout_weight="0.20"
+                    android:layout_column="25" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView android:id="@+id/imgGeneral"
+                    android:layout_column="14"
+                    android:src="@drawable/formula"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:longClickable="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CalendarView android:id="@+id/calendario"
+                    android:layout_column="25" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>
